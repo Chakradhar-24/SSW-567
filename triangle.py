@@ -19,3 +19,5 @@ def classify_triangle(a, b, c):
         triangle_type += " and Right"
 
     return triangle_type
+
+#this is the program
