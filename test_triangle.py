@@ -25,4 +25,4 @@ class TestClassifyTriangle(unittest.TestCase):
         self.assertEqual(classify_triangle(7, 5, 9), "Scalene")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(exit=False)  # Prevents the test from causing the interpreter to exit
