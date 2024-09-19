@@ -15,8 +15,9 @@ def classify_triangle(a, b, c):
         triangle_type = "Scalene"
 
     # Check if it's a right triangle (since the sides are sorted, we only need to check a^2 + b^2 == c^2)
-    if a*2 + b2 == c*2:
+    if round(a**2 + b**2, 6) == round(c**2, 6):
         triangle_type += " and Right"
+
 
     return triangle_type
 
