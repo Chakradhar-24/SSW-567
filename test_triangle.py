@@ -14,11 +14,14 @@ class TestClassifyTriangle(unittest.TestCase):
     
     def test_right_isosceles_triangle(self):
         self.assertEqual(classify_triangle(5, 5, 7.07106781187), "Isosceles and Right")
-    
+
+    def test_large_right_triangle(self):
+        self.assertEqual(classify_triangle(6, 8, 10), "Scalene and Right")
+
     def test_not_a_triangle(self):
         self.assertEqual(classify_triangle( 2,3,6), "Not a triangle")
     
-    def test_large_right_triangle(self):
+    def test_large_right_triangle_alt(self):
         self.assertEqual(classify_triangle(9,12,15), "Scalene and Right")
     
     
