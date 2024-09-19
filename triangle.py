@@ -6,7 +6,7 @@ def classify_triangle(a, b, c):
     if a + b <= c:
         return "Not a triangle"
 
-    # Determine the triangle type
+    # classify  the triangle type
     if a == b == c:
         triangle_type = "Equilateral"
     elif a == b or b == c:
@@ -15,6 +15,7 @@ def classify_triangle(a, b, c):
         triangle_type = "Scalene"
 
     # Check if it's a right triangle (since the sides are sorted, we only need to check a^2 + b^2 == c^2)
+    #Also check the decimals point untill 6 digits so that we can get correct results for right triangle
     if round(a**2 + b**2, 6) == round(c**2, 6):
         triangle_type += " and Right"
 
