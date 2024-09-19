@@ -21,4 +21,3 @@ def classify_triangle(a, b, c):
 
     return triangle_type
 
-#this is the program
