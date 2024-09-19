@@ -1,5 +1,5 @@
 import unittest
-from triangle import classify_triangle  # Import the function from your triangle module
+from triangle import classify_triangle  # Import the function from your triangle function.
 
 class TestClassifyTriangle(unittest.TestCase):
 
