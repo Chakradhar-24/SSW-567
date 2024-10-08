@@ -1,12 +1,9 @@
 language: python
 python:
- - "3.5"
-
-# command to run tests
-script:
+  - "3.9"  # specify the Python version you're using
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements.txt  # install dependencies if any
+script:
+  - pytest  # run tests, assuming you are using pytest
 
- - python -m unittest TestTriangle
- 
 
