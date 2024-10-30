@@ -29,8 +29,12 @@ class TestClassifyTriangle(unittest.TestCase):
     
     def test_large_right_triangle_alt(self):
         self.assertEqual(classify_triangle(9, 12, 15), "Scalene and Right")
-        print(" scalene and right triangle condition is satisfied")
-    
+        print("Scalene and right triangle condition is satisfied")
+
+    # New test case for invalid triangle with zero-length sides
+    def test_zero_length_sides(self):
+        self.assertEqual(classify_triangle(0, 0, 0), "Not a triangle")
+        print("Zero length sides, not a triangle condition is satisfied")
 
 if __name__ == '__main__':
     unittest.main(exit=False)  # Prevents the test from causing the interpreter to exit
